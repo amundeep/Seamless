@@ -10,34 +10,90 @@ package me.amundeep.seamless;
 public final class R {
     public static final class attr {
     }
+    public static final class color {
+        public static final int goblinGreen=0x7f040003;
+        public static final int lvDividerColor=0x7f040005;
+        public static final int lvHeaderDividerColor=0x7f040004;
+        public static final int lvHeaderTextColor=0x7f040000;
+        public static final int primaryTextColor=0x7f040001;
+        public static final int secondaryTextColor=0x7f040002;
+    }
+    public static final class dimen {
+        /**  Default screen margins, per the Android Design guidelines. 
+         */
+        public static final int activity_horizontal_margin=0x7f050000;
+        public static final int activity_vertical_margin=0x7f050001;
+        public static final int lvDividerHeight=0x7f05000e;
+        public static final int lvDividerMargin=0x7f05000f;
+        public static final int lvDividerWidth=0x7f050011;
+        public static final int lvHdrItemHeight=0x7f050004;
+        public static final int lvHeadingPaddingLeft=0x7f050006;
+        public static final int lvHeadingTextSize=0x7f050007;
+        public static final int lvItemHeight=0x7f050005;
+        public static final int lvPrimaryPaddingBottom=0x7f050009;
+        public static final int lvPrimaryPaddingLeft=0x7f05000a;
+        public static final int lvPrimaryPaddingTop=0x7f050008;
+        public static final int lvPrimaryTextSize=0x7f050002;
+        public static final int lvSecondaryPaddingBottom=0x7f05000c;
+        public static final int lvSecondaryPaddingLeft=0x7f05000d;
+        public static final int lvSecondaryPaddingTop=0x7f05000b;
+        public static final int lvSecondaryTextSize=0x7f050003;
+        public static final int lvSectionDividerMargin=0x7f050010;
+        public static final int lvSectionDividerMarginTop=0x7f050012;
+    }
     public static final class drawable {
-        public static final int button_custom1=0x7f020000;
-        public static final int ic_launcher=0x7f020001;
-        public static final int splash=0x7f020002;
-        public static final int splash_bg=0x7f020003;
+        public static final int button_confirm=0x7f020000;
+        public static final int button_custom1=0x7f020001;
+        public static final int ic_launcher=0x7f020002;
+        public static final int splash=0x7f020003;
+        public static final int splash_bg=0x7f020004;
     }
     public static final class id {
-        public static final int bSubmitCode=0x7f060002;
-        public static final int etCode=0x7f060001;
-        public static final int etPlain=0x7f060000;
+        public static final int Event_Dates=0x7f090006;
+        public static final int Event_Info=0x7f090001;
+        public static final int LocationSeparator=0x7f090009;
+        public static final int bNextFrag=0x7f090013;
+        public static final int bSubmitCode=0x7f090011;
+        public static final int confirmButton=0x7f09000b;
+        public static final int content=0x7f09000e;
+        public static final int date_layout=0x7f090005;
+        public static final int dates=0x7f090007;
+        public static final int editButton=0x7f09000c;
+        public static final int etCode=0x7f090010;
+        public static final int etPlain=0x7f09000f;
+        public static final int event_img=0x7f090004;
+        public static final int event_name=0x7f090002;
+        public static final int event_subtext=0x7f090003;
+        public static final int frontBackTitle=0x7f09000d;
+        public static final int info_layout=0x7f090000;
+        public static final int item_separator=0x7f090015;
+        public static final int location=0x7f09000a;
+        public static final int location_layout=0x7f090008;
+        public static final int lv_item_header=0x7f090016;
+        public static final int lv_item_subtext=0x7f090017;
+        public static final int surface1=0x7f090012;
+        public static final int surface2=0x7f090014;
     }
     public static final class layout {
-        public static final int activity_splash=0x7f030000;
+        public static final int activity_confirm_information=0x7f030000;
+        public static final int activity_shirtlayout=0x7f030001;
+        public static final int activity_splash=0x7f030002;
+        public static final int fragment_1=0x7f030003;
+        public static final int fragment_2=0x7f030004;
+        public static final int lv_layout=0x7f030005;
+    }
+    public static final class menu {
+        public static final int confirm_information=0x7f080000;
     }
     public static final class string {
-        public static final int app_name=0x7f040000;
+        public static final int action_settings=0x7f060003;
+        public static final int app_name=0x7f060000;
+        public static final int front_back_title=0x7f060004;
+        public static final int hello_world=0x7f060002;
+        public static final int title_activity_confirm_information=0x7f060001;
     }
     public static final class style {
         /** 
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-    
-
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        
-
         Base application theme for API 11+. This theme completely replaces
         AppBaseTheme from res/values/styles.xml on API 11+ devices.
     
@@ -49,10 +105,17 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f050000;
-        /**  Application theme. 
- All customizations that are NOT specific to a particular API-level can go here. 
-         */
-        public static final int AppTheme=0x7f050001;
+        public static final int AppBaseTheme=0x7f07000b;
+        public static final int MyCustomTheme=0x7f070000;
+        public static final int MyCustomTheme_ActionBar=0x7f070001;
+        public static final int MyCustomTheme_ActionBar_Text=0x7f070002;
+        public static final int listViewHeaderItem=0x7f070003;
+        public static final int listViewHeaderItemButtonStyle=0x7f07000a;
+        public static final int listViewItem=0x7f070004;
+        public static final int listViewItemButtonStyle=0x7f070009;
+        public static final int listViewPrimaryDetail=0x7f070005;
+        public static final int listViewSecondaryDetail=0x7f070006;
+        public static final int listViewSectionDividerVerticalDivider=0x7f070008;
+        public static final int listViewVerticalDivider=0x7f070007;
     }
 }

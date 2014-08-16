@@ -49,6 +49,7 @@
 	 	    android:layout_centerHorizontal="true"
 	 	    android:layout_below="@id/etPlain"
 	 	    android:ems="10"
+	 	    android:textColor="#FFFFFF"
 	 	    android:inputType="numberDecimal" >
 	
 	 	</EditText>
