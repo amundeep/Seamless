@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@drawable/splash_bg"
     tools:context="me.amundeep.seamless.Splash" >
 
     <!--
@@ -12,12 +12,61 @@
          TextureView, etc.
     -->
 
- 	<ImageView 
- 	    android:src="@drawable/ic_launcher"
- 	    android:layout_height="wrap_content"
+ 	<ImageView android:src="@drawable/splash"
+ 	    android:layout_height="200dp"
+ 	    android:layout_width="400dp"
+ 	    android:maxWidth="100dp"
+ 	    android:maxHeight="50dp"
+ 	    android:layout_gravity="center|top"
+ 	    android:layout_marginTop="20dp"
+ 	    android:layout_marginLeft="10dp"
+ 	    android:layout_marginRight="10dp" />
+
+ 	<RelativeLayout
  	    android:layout_width="wrap_content"
- 	    android:layout_gravity="center"
- 	    android:contentDescription="Launch icon" />
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_gravity="center" >
+ 	    
+ 	    <EditText
+ 	    	android:id="@+id/etPlain"
+ 	    	android:layout_width="wrap_content"
+ 	    	android:layout_height="wrap_content"
+ 	    	android:textAlignment="center"
+ 	    	android:textIsSelectable="false"
+ 	    	android:text="Enter your Eventbrite code:"
+ 	    	android:textColor="#FFFFFF"
+ 	    	android:layout_margin="15dp"
+ 	    	android:background="@null"
+ 	    	android:focusable="false"
+ 	    	android:focusableInTouchMode="false" >
+
+ 		</EditText>
+
+	 	<EditText
+	 	    android:id="@+id/etCode"
+	 	    android:layout_width="wrap_content"
+	 	    android:layout_height="wrap_content"
+	 	    android:layout_centerHorizontal="true"
+	 	    android:layout_below="@id/etPlain"
+	 	    android:ems="10"
+	 	    android:inputType="numberDecimal" >
+	
+	 	</EditText>
+	
+	 	<Button
+	 	    android:id="@+id/bSubmitCode"
+	 	    android:background="@drawable/button_custom1"
+	 	    android:layout_width="wrap_content"
+	 	    android:layout_height="wrap_content"
+	 	    android:minHeight="40dp"
+	 	    android:minWidth="100dp"
+	 	    android:layout_below="@id/etCode"
+	 	    android:layout_centerHorizontal="true"
+	 	    android:layout_marginTop="10dp"
+	 	    android:text="Continue" />
+	 </RelativeLayout>
+
+ 	
 
 </FrameLayout>
 

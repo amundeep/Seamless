@@ -14,20 +14,23 @@ public class Splash extends Activity {
 
 		setContentView(R.layout.activity_splash);
 	
-		Thread timer = new Thread(){
-			public void run(){
-				try{
-					sleep(2000);
-				}catch(InterruptedException e){
-					e.printStackTrace();
-				}finally {
-//					Intent openMainMenu = new Intent("");
-//					startActivity(openMainMenu);
-					Log.i("Startup", "Seamless successfully opened!");
-				}
-			}
-		};
-		timer.start();
+//		Thread timer = new Thread(){
+//			public void run(){
+//				try{
+//					sleep(2000);
+//				}catch(InterruptedException e){
+//					e.printStackTrace();
+//				}finally {
+////					Intent openMainMenu = new Intent("");
+////					startActivity(openMainMenu);
+//					Log.i("Startup", "Seamless successfully opened!");
+//				}
+//			}
+//		};
+//		timer.start();
+		
+		
+		
 	}
 }
 
