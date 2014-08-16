@@ -5,6 +5,7 @@ import javax.security.auth.callback.Callback;
 import android.app.Activity;
 import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
@@ -23,7 +24,8 @@ public class DrawFragment1 extends Activity{
 	        public void surfaceCreated(SurfaceHolder holder) {
 	            // Do some drawing when surface is ready
 	            Canvas canvas = holder.lockCanvas();
-	            canvas.drawColor(Color.RED);
+	            Paint paint = new Paint();
+	            
 	            holder.unlockCanvasAndPost(canvas);
 	        }
 
