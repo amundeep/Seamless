@@ -1100,7 +1100,9 @@ containing a value of this type.
         public static final int abc_textfield_searchview_holo_light=0x7f020054;
         public static final int abc_textfield_searchview_right_holo_dark=0x7f020055;
         public static final int abc_textfield_searchview_right_holo_light=0x7f020056;
-        public static final int ic_launcher=0x7f020057;
+        public static final int button_confirm=0x7f020057;
+        public static final int button_custom1=0x7f020058;
+        public static final int ic_launcher=0x7f020059;
     }
     public static final class id {
         public static final int Event_Dates=0x7f050042;
@@ -1306,7 +1308,10 @@ containing a value of this type.
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f0b008b;
+        public static final int AppBaseTheme=0x7f0b0096;
+        public static final int MyCustomTheme=0x7f0b008b;
+        public static final int MyCustomTheme_ActionBar=0x7f0b008c;
+        public static final int MyCustomTheme_ActionBar_Text=0x7f0b008d;
         /**  Mimic text appearance in select_dialog_item.xml 
          */
         public static final int TextAppearance_AppCompat_Base_CompactMenu_Dialog=0x7f0b0063;
@@ -1509,14 +1514,14 @@ containing a value of this type.
         public static final int Widget_AppCompat_ProgressBar=0x7f0b000a;
         public static final int Widget_AppCompat_ProgressBar_Horizontal=0x7f0b0009;
         public static final int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f0b0022;
-        public static final int listViewHeaderItem=0x7f0b008c;
-        public static final int listViewHeaderItemButtonStyle=0x7f0b0093;
-        public static final int listViewItem=0x7f0b008d;
-        public static final int listViewItemButtonStyle=0x7f0b0092;
-        public static final int listViewPrimaryDetail=0x7f0b008e;
-        public static final int listViewSecondaryDetail=0x7f0b008f;
-        public static final int listViewSectionDividerVerticalDivider=0x7f0b0091;
-        public static final int listViewVerticalDivider=0x7f0b0090;
+        public static final int listViewHeaderItem=0x7f0b008e;
+        public static final int listViewHeaderItemButtonStyle=0x7f0b0095;
+        public static final int listViewItem=0x7f0b008f;
+        public static final int listViewItemButtonStyle=0x7f0b0094;
+        public static final int listViewPrimaryDetail=0x7f0b0090;
+        public static final int listViewSecondaryDetail=0x7f0b0091;
+        public static final int listViewSectionDividerVerticalDivider=0x7f0b0093;
+        public static final int listViewVerticalDivider=0x7f0b0092;
     }
     public static final class styleable {
         /**  ============================================ 

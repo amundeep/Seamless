@@ -23,6 +23,10 @@ public class ConfirmInformationActivity extends Activity{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_confirm_information);
 		
+		this.getActionBar().setIcon(android.R.color.transparent);
+		this.getActionBar().setTitle("Confirm Information");
+
+		
 		TextView eventName = (TextView)findViewById(R.id.event_name);
 		TextView eventSubtext=(TextView)findViewById(R.id.event_subtext);
 		TextView dateText=(TextView)findViewById(R.id.dates);

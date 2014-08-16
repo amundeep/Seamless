@@ -257,7 +257,9 @@ int drawable abc_textfield_searchview_holo_dark 0x7f020053
 int drawable abc_textfield_searchview_holo_light 0x7f020054
 int drawable abc_textfield_searchview_right_holo_dark 0x7f020055
 int drawable abc_textfield_searchview_right_holo_light 0x7f020056
-int drawable ic_launcher 0x7f020057
+int drawable button_confirm 0x7f020057
+int drawable button_custom1 0x7f020058
+int drawable ic_launcher 0x7f020059
 int id Event_Dates 0x7f050042
 int id Event_Info 0x7f05003d
 int id LocationSeparator 0x7f050045
@@ -390,7 +392,10 @@ int string app_name 0x7f0a000d
 int string front_back_title 0x7f0a0011
 int string hello_world 0x7f0a000f
 int string title_activity_confirm_information 0x7f0a000e
-int style AppBaseTheme 0x7f0b008b
+int style AppBaseTheme 0x7f0b0096
+int style MyCustomTheme 0x7f0b008b
+int style MyCustomTheme_ActionBar 0x7f0b008c
+int style MyCustomTheme_ActionBar_Text 0x7f0b008d
 int style TextAppearance_AppCompat_Base_CompactMenu_Dialog 0x7f0b0063
 int style TextAppearance_AppCompat_Base_SearchResult 0x7f0b006d
 int style TextAppearance_AppCompat_Base_SearchResult_Subtitle 0x7f0b006f
@@ -530,14 +535,14 @@ int style Widget_AppCompat_PopupMenu 0x7f0b002b
 int style Widget_AppCompat_ProgressBar 0x7f0b000a
 int style Widget_AppCompat_ProgressBar_Horizontal 0x7f0b0009
 int style Widget_AppCompat_Spinner_DropDown_ActionBar 0x7f0b0022
-int style listViewHeaderItem 0x7f0b008c
-int style listViewHeaderItemButtonStyle 0x7f0b0093
-int style listViewItem 0x7f0b008d
-int style listViewItemButtonStyle 0x7f0b0092
-int style listViewPrimaryDetail 0x7f0b008e
-int style listViewSecondaryDetail 0x7f0b008f
-int style listViewSectionDividerVerticalDivider 0x7f0b0091
-int style listViewVerticalDivider 0x7f0b0090
+int style listViewHeaderItem 0x7f0b008e
+int style listViewHeaderItemButtonStyle 0x7f0b0095
+int style listViewItem 0x7f0b008f
+int style listViewItemButtonStyle 0x7f0b0094
+int style listViewPrimaryDetail 0x7f0b0090
+int style listViewSecondaryDetail 0x7f0b0091
+int style listViewSectionDividerVerticalDivider 0x7f0b0093
+int style listViewVerticalDivider 0x7f0b0092
 int[] styleable ActionBar { 0x7f010025, 0x7f010026, 0x7f010027, 0x7f010028, 0x7f010029, 0x7f01002a, 0x7f01002b, 0x7f01002c, 0x7f01002d, 0x7f01002e, 0x7f01002f, 0x7f010030, 0x7f010031, 0x7f010032, 0x7f010033, 0x7f010034, 0x7f010035, 0x7f010036, 0x7f010037 }
 int styleable ActionBar_background 10
 int styleable ActionBar_backgroundSplit 12

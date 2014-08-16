@@ -120,7 +120,7 @@
 	    <Button
 		     android:layout_height="wrap_content"
 		     android:layout_width="match_parent"
-		     android:background="#9B59B6"
+		     android:background="@drawable/button_confirm"
 		     android:textColor="#fff"
 		     android:layout_below="@id/location"
 		     android:id="@+id/confirmButton"
@@ -130,7 +130,7 @@
 		     android:layout_height="wrap_content"
 		     android:layout_width="match_parent"
 		     android:layout_marginTop="10dp"
-		     android:background="#BE90D4"
+		     android:background="@drawable/button_custom1"
 		     android:textColor="#fff"
 		     android:layout_below="@id/confirmButton"
 		     android:id="@+id/editButton"

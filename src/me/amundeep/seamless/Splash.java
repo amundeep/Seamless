@@ -19,6 +19,9 @@ public class Splash extends Activity {
 
 		setContentView(R.layout.activity_splash);
 	
+		this.getActionBar().setIcon(android.R.color.transparent);
+		this.getActionBar().setTitle("Seamless");
+		
 		Thread timer = new Thread(){
 			public void run(){
 				String result;

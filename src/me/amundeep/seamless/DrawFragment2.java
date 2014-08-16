@@ -16,6 +16,10 @@ public class DrawFragment2 extends Activity{
 
 	    setContentView(R.layout.fragment_2);
 
+		this.getActionBar().setIcon(android.R.color.transparent);
+		this.getActionBar().setTitle("View Design"); //CHANGE TITLE OF ACTION BAR HERE
+
+	    
 	    SurfaceView surface = (SurfaceView) findViewById(R.id.surface2);
 	    surface.getHolder().addCallback(new SurfaceHolder.Callback() {
 
