@@ -33,7 +33,7 @@ public class DrawFragment1 extends Activity{
 	private static final int NUMBER_OF_VERTICAL_SQUARES = 4;
 	private static final int NUMBER_OF_HORIZONTAL_SQUARES = 4;
 	
-	public Bitmap[][] bitmapArray;
+	public Bitmap[] bitmapArray;
 	
 	SurfaceView surface;
 	Button bNextFrag;
@@ -49,7 +49,7 @@ public class DrawFragment1 extends Activity{
 	    
 	    context = this;
 	    
-	    bitmapArray = new Bitmap[NUMBER_OF_VERTICAL_SQUARES][NUMBER_OF_HORIZONTAL_SQUARES];
+	    bitmapArray = new Bitmap[NUMBER_OF_VERTICAL_SQUARES*NUMBER_OF_HORIZONTAL_SQUARES];
 
 		this.getActionBar().setIcon(android.R.color.transparent);
 		this.getActionBar().setTitle("View Design"); //CHANGE TITLE OF ACTION BAR HERE
@@ -64,28 +64,30 @@ public class DrawFragment1 extends Activity{
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				String key = "b:";
+				String key = "bmp";
 
 				
 				Intent i = new Intent(DrawFragment1.this, DrawFragment2.class);
 				
 				ByteArrayOutputStream stream = new ByteArrayOutputStream();
 				
-				for(int row = 0; row < NUMBER_OF_VERTICAL_SQUARES; row++){
-					for(int col = 0; col < NUMBER_OF_HORIZONTAL_SQUARES; col++){
+//				for(int row = 0; row < NUMBER_OF_VERTICAL_SQUARES; row++){
+//					for(int col = 0; col < NUMBER_OF_HORIZONTAL_SQUARES; col++){
 						
-						Bitmap bmp = bitmapArray[row][col];
 						
 //						bmp.compress(Bitmap.CompressFormat.PNG, 50, stream);
 //						byte[] byteArray = stream.toByteArray();
 						
-						i.putExtra(key + row + "," + col, bmp);
-						
+				i.putExtra("bitmaparray", bitmapArray);
+				for(int j=1;j<=16;j++){
+					i.putExtra(key+j,bitmapArray[j-1]);
+				}
+				
 //						i.putExtra(key + row + "," + col, byteArray);
 //						Log.wtf("data", key + row + "," + col);
 						
-					}
-				}
+//					}
+//				}
 				startActivity(i);
 			}
 		});
@@ -164,7 +166,7 @@ public class DrawFragment1 extends Activity{
 			String result;
     		try{
     			final HttpClient httpclient = new DefaultHttpClient();  
-				final HttpGet request = new HttpGet("https://api.instagram.com/v1/tags/Snow/media/recent?access_token=1464502412.4529896.fb74f46ed2044daab188365e95b1147b"); 
+				final HttpGet request = new HttpGet("https://api.instagram.com/v1/tags/fire/media/recent?access_token=1464502412.4529896.fb74f46ed2044daab188365e95b1147b"); 
 				final BasicResponseHandler handler = new BasicResponseHandler();  
 				result = httpclient.execute(request, handler);
 				final JSONObject obj = new JSONObject(result);
@@ -213,11 +215,11 @@ public class DrawFragment1 extends Activity{
 		            mIcon11 = BitmapFactory.decodeStream(in);
 		           
 		            
-		            if(i%NUMBER_OF_HORIZONTAL_SQUARES == 0 && i != 0){
-		            	counter++;
-		            }
+//		            if(i%NUMBER_OF_HORIZONTAL_SQUARES == 0 && i != 0){
+//		            	counter++;
+//		            }
 		            
-		            bitmapArray[counter][i%4] = scaleDownBitmap(mIcon11, 10, context);
+		            bitmapArray[i] = scaleDownBitmap(mIcon11, 10, context);
 		            Log.v("counter",""+counter);
 		            
 		            Log.i("Bitmap", mIcon11 + "");
