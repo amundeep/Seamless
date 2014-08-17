@@ -38,6 +38,10 @@
             android:name=".DrawFragment2"
             android:label="Back" >
         </activity>
+        <activity
+            android:name=".ShirtLayout"
+            android:label="Confirm Shirt Layout" >
+        </activity>
     </application>
 
 </manifest>

@@ -75,11 +75,13 @@ public class Splash extends Activity {
 							} catch (Exception e){
 								e.printStackTrace();
 							}finally {
-								Intent openMainMenu = new Intent(Splash.this,ConfirmInformationActivity.class);
-								openMainMenu.putExtra("name", name).putExtra("description", description)
-											.putExtra("startDate",startDate).putExtra("endDate", endDate)
-											.putExtra("location", location);
-								startActivity(openMainMenu);
+//								Intent openMainMenu = new Intent(Splash.this,ConfirmInformationActivity.class);
+//								openMainMenu.putExtra("name", name).putExtra("description", description)
+//											.putExtra("startDate",startDate).putExtra("endDate", endDate)
+//											.putExtra("location", location);
+//								startActivity(openMainMenu);
+								Intent openShirtLayout = new Intent(Splash.this, ShirtLayout.class);
+								startActivity(openShirtLayout);
 								Log.i("Startup", "Seamless successfully opened!");
 							}
 						}

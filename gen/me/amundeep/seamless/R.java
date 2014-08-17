@@ -42,45 +42,58 @@ public final class R {
         public static final int lvSectionDividerMarginTop=0x7f050012;
     }
     public static final class drawable {
-        public static final int button_confirm=0x7f020000;
-        public static final int button_custom1=0x7f020001;
-        public static final int ic_launcher=0x7f020002;
-        public static final int splash=0x7f020003;
-        public static final int splash_bg=0x7f020004;
+        public static final int button_colorpick=0x7f020000;
+        public static final int button_confirm=0x7f020001;
+        public static final int button_custom1=0x7f020002;
+        public static final int ic_launcher=0x7f020003;
+        public static final int splash=0x7f020004;
+        public static final int splash_bg=0x7f020005;
     }
     public static final class id {
         public static final int Event_Dates=0x7f090006;
         public static final int Event_Info=0x7f090001;
         public static final int LocationSeparator=0x7f090009;
-        public static final int bNextFrag=0x7f090013;
-        public static final int bSubmitCode=0x7f090011;
+        public static final int bBlue=0x7f090016;
+        public static final int bColorPick=0x7f09000d;
+        public static final int bConfirm=0x7f09000f;
+        public static final int bGold=0x7f090015;
+        public static final int bNextFrag=0x7f09001e;
+        public static final int bPurple=0x7f090019;
+        public static final int bRandom=0x7f09000e;
+        public static final int bRed=0x7f090014;
+        public static final int bSubmitCode=0x7f090012;
+        public static final int bTeal=0x7f09001a;
+        public static final int bWhite=0x7f09001c;
+        public static final int bYellow=0x7f090018;
         public static final int confirmButton=0x7f09000b;
-        public static final int content=0x7f09000e;
         public static final int date_layout=0x7f090005;
         public static final int dates=0x7f090007;
         public static final int editButton=0x7f09000c;
-        public static final int etCode=0x7f090010;
-        public static final int etPlain=0x7f09000f;
+        public static final int etCode=0x7f090011;
+        public static final int etPlain=0x7f090010;
         public static final int event_img=0x7f090004;
         public static final int event_name=0x7f090002;
         public static final int event_subtext=0x7f090003;
-        public static final int frontBackTitle=0x7f09000d;
         public static final int info_layout=0x7f090000;
-        public static final int item_separator=0x7f090015;
+        public static final int item_separator=0x7f090020;
         public static final int location=0x7f09000a;
         public static final int location_layout=0x7f090008;
-        public static final int lv_item_header=0x7f090016;
-        public static final int lv_item_subtext=0x7f090017;
-        public static final int surface1=0x7f090012;
-        public static final int surface2=0x7f090014;
+        public static final int lv_item_header=0x7f090021;
+        public static final int lv_item_subtext=0x7f090022;
+        public static final int rl1=0x7f090013;
+        public static final int rl2=0x7f090017;
+        public static final int rl3=0x7f09001b;
+        public static final int surface1=0x7f09001d;
+        public static final int surface2=0x7f09001f;
     }
     public static final class layout {
         public static final int activity_confirm_information=0x7f030000;
         public static final int activity_shirtlayout=0x7f030001;
         public static final int activity_splash=0x7f030002;
-        public static final int fragment_1=0x7f030003;
-        public static final int fragment_2=0x7f030004;
-        public static final int lv_layout=0x7f030005;
+        public static final int dialog_colorpick=0x7f030003;
+        public static final int fragment_1=0x7f030004;
+        public static final int fragment_2=0x7f030005;
+        public static final int lv_layout=0x7f030006;
     }
     public static final class menu {
         public static final int confirm_information=0x7f080000;

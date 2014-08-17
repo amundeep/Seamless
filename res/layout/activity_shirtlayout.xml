@@ -1,27 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/frontBackTitle"
-        android:layout_width="match_parent"
+    <RelativeLayout
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/front_back_title"
-        android:textSize="60sp" />
+        android:layout_alignParentBottom="true" >
+        
+        
+        
+        <Button
+        	android:id="@+id/bColorPick"
+        	android:layout_centerHorizontal="true"
+        	android:background="@drawable/button_colorpick"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:minHeight="60dp"
+        	android:minWidth="100dp"
+        	android:textColor="#FFFFFF"
+        	android:layout_marginBottom="10dp"
+        	android:layout_marginTop="10dp"
+        	android:text="Color" />
+        
+        <Button
+        	android:id="@+id/bRandom"
+        	android:background="@drawable/button_custom1"
+        	android:layout_alignParentLeft="true"
+        	android:layout_toLeftOf="@id/bColorPick"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:minHeight="60dp"
+        	android:textColor="#FFFFFF"
+        	android:layout_margin="10dp"
+        	android:text="Randomize" />
+        
+        <Button
+        	android:id="@+id/bConfirm"
+        	android:background="@drawable/button_confirm"
+        	android:layout_alignParentRight="true"
+        	android:layout_toRightOf="@id/bColorPick"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:textColor="#FFFFFF"
+        	android:minHeight="60dp"
+        	android:layout_margin="10dp"
+        	android:text="Confirm Design" />
+        
+    </RelativeLayout>
 
-    <ScrollView 
-	    android:id="@+id/content"
-	    android:layout_width="match_parent"
-	    android:layout_height="match_parent" >
-
-	    <TextView style="?android:textAppearanceMedium"
-	        android:padding="16dp"
-	        android:lineSpacingMultiplier="1.2"
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:text="@string/front_back_title" />
-	</ScrollView>
-
-</LinearLayout>
+</RelativeLayout>
